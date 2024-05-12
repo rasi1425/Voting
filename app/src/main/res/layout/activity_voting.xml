@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:layout_marginStart="50dp"
+        android:id="@+id/candidateRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/candidate1RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/editext_background"
+            android:text="Candidate 1" />
+
+        <RadioButton
+            android:id="@+id/candidate2RadioButton"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+
+            android:background="@drawable/editext_background"
+            android:layout_height="wrap_content"
+            android:text="Candidate 2" />
+
+        <RadioButton
+            android:id="@+id/candidate3RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+
+            android:background="@drawable/editext_background"
+            android:text="Candidate 3" />
+
+        <RadioButton
+            android:id="@+id/candidate4RadioButton"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/black"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editext_background"
+            android:layout_height="wrap_content"
+            android:text="Candidate 4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/voteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote"
+        android:padding="10dp"
+        android:background="@drawable/editext_background"
+        android:layout_below="@id/candidateRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
